@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Plus Jakart Sans";
+  src: url("/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakart Sans";
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very-light-grayish-blue);
+  padding: 35px;
+}
+.notification__main {
+  background-color: var(--White);
+  padding: 2rem;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px 2px var(--Dark-grayish-blue);
+}
+header {
+  display: flex;
+}
+.notification__title {
+  font-weight: bolder;
+}
+.mark-all-read {
+  display: block;
+  margin-left: auto;
+  text-decoration: none;
+  color: var(--Dark-grayish-blue);
+}
+.mark-all-read:hover {
+  color: var(--Blue);
+  font-weight: 500;
+}
+.notification__bubble {
+  color: var(--White);
+  background-color: var(--Blue);
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+}
+.time {
+  color: var(--Grayish-blue);
+}
+
+.notification {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  margin-block: 5px;
+  gap: 15px;
+  color: var(--Dark-grayish-blue);
+  cursor: pointer;
+  z-index: 200;
+}
+.boldEnding {
+  text-decoration: none;
+  font-weight: bolder;
+  color: var(--Dark-grayish-blue);
+}
+.boldEnding:hover {
+  color: var(--Blue);
+}
+.DisplayName {
+  font-weight: bolder;
+  color: var(--Very-dark-blue);
+}
+.DisplayName:hover {
+  cursor: pointer;
+  color: var(--Blue);
+}
+.unread {
+  background-color: #e5eff9;
+}
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.message {
+  margin: 5px;
+  padding: 20px 15px;
+  border: 1px solid;
+  border-color: #e5eff9;
+  border-radius: 5px;
+}
+.message:hover {
+  background-color: #e5eff9;
+  cursor: pointer;
+}
+
+.chessImage {
+  display: block;
+  float: right;
+  width: 55px;
+  cursor: pointer;
+  height: auto;
+}
+.chessImage:hover {
+  opacity: 80%;
+}
+.notification__description {
+  width: 100%;
+}
+.redDot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+  background-color: var(--Red);
+  display: none;
+}
+.unread .redDot {
+  display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+  .notification__main {
+    width: 100%;
+    box-shadow: none;
+  }
+  body {
+    padding-inline: 0;
+    padding-block: 0;
+  }
+}
+
+.attribution{
+  padding-top: 15px;
+  font-weight: bolder;
+}
