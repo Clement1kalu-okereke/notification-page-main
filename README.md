@@ -35,11 +35,11 @@ Users should be able to:
 
 **Desktop Design** 
 
-![screenshot](./screenshot desktop.jpg)
+![screenshot](./screenshot%20desktop.jpg)
 
 **Mobile Design**
 
-![screenshot](./screenshot mobile.jpg)
+![screenshot](./screenshot%20mobile.jpg)
 
 ### Links
 
