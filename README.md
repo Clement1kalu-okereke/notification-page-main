@@ -34,9 +34,11 @@ Users should be able to:
 ### Screenshot
 
 **Desktop Design** 
+
 ![screenshot](./screenshot desktop.jpg)
 
 **Mobile Design**
+
 ![screenshot](./screenshot mobile.jpg)
 
 ### Links
